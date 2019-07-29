@@ -16,6 +16,15 @@ app.use(cors());
 // Init Middlewares
 app.use(express.json({ extended: false }));
 
+// GET - Root page
+app.get('/', (req, res) => {
+  res.json({
+    Service: 'Sendgrid with Express.js',
+    Status: 'Running!',
+    Repository: 'https://github.com/cobimr/sengrid-express'
+  });
+});
+
 // POST - Send Email throught SendGrid
 app.post('/send-email', async (req, res) => {
   //Get Variables from query string in the search bar
