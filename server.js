@@ -4,8 +4,10 @@ const sgMail = require('@sendgrid/mail');
 
 const app = express();
 
-// Require env variables
-require('dotenv').config();
+// Check if is the environment is development to require dotenv
+if (app.get('env') === 'development') {
+  require('dotenv').config();
+}
 
 // Sendgrid API key
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
