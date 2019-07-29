@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
   res.json({
     Service: 'Sendgrid with Express.js',
     Status: 'Running!',
-    Repository: 'https://github.com/cobimr/sengrid-express'
+    Repository: 'https://github.com/cobimr/sendgrid-express'
   });
 });
 
