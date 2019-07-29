@@ -1,7 +1,7 @@
 {
-  "name": "mockraft-website",
+  "name": "sendgrid-express",
   "version": "1.0.0",
-  "description": "Mockraft website",
+  "description": "sendgrid express api",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cobimr/mockraft-website.git"
+    "url": "git+https://github.com/cobimr/sengrid-express.git"
   },
   "keywords": [],
   "author": "Jacobo Martinez",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cobimr/mockraft-website/issues"
+    "url": "https://github.com/cobimr/sendgrid-express/issues"
   },
-  "homepage": "https://github.com/cobimr/mockraft-website#readme",
+  "homepage": "https://github.com/cobimr/sendgrid-express#readme",
   "dependencies": {
     "@sendgrid/mail": "^6.4.0",
     "cors": "^2.8.5",
