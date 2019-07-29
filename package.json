@@ -1,0 +1,33 @@
+{
+  "name": "mockraft-website",
+  "version": "1.0.0",
+  "description": "Mockraft website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cobimr/mockraft-website.git"
+  },
+  "keywords": [],
+  "author": "Jacobo Martinez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cobimr/mockraft-website/issues"
+  },
+  "homepage": "https://github.com/cobimr/mockraft-website#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^6.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.1"
+  }
+}
